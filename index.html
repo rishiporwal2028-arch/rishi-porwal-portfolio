@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Rishi Porwal — Finance × Strategy portfolio. Capital, markets, automation and business.">
+<meta property="og:title" content="Rishi Porwal — Finance × Strategy">
+<meta property="og:description" content="A portfolio exploring capital, markets, automation and business.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<title>Rishi Porwal — Finance × Strategy</title>
+<style>
+[hidden]{display:none !important}
+:root{--bg:#f4f3ef;--fg:#11120f;--muted:#6c6d66;--line:#c9c9c1;--signal:#b7ff2a;--panel:#ebeae4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font-family:"Helvetica Neue",Arial,sans-serif;line-height:1.45}button,a{font:inherit;color:inherit}a{text-decoration:none}.mono{font-family:"IBM Plex Mono","SFMono-Regular",Consolas,monospace}.wrap{max-width:1440px;margin:auto;padding:0 42px}
+nav{height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:color-mix(in srgb,var(--bg) 94%,transparent);backdrop-filter:blur(12px);z-index:10}.brand{font-weight:700;letter-spacing:-.03em}.navlinks{display:flex;gap:28px;font-size:13px}.navlinks a:hover{opacity:.55}
+.toggle{border:1px solid var(--fg);background:none;padding:7px 11px;cursor:pointer;font-size:12px}
+.hero{min-height:calc(100vh - 72px);display:grid;grid-template-columns:1fr 1fr;align-items:end;padding:70px 0 55px;border-bottom:1px solid var(--line)}.kicker{font-size:13px;letter-spacing:.12em}.hero h1{font-size:clamp(64px,9vw,150px);line-height:.82;letter-spacing:-.075em;margin:20px 0 35px;max-width:850px}.hero p{font-size:19px;max-width:640px}.current{justify-self:end;align-self:start;border-left:1px solid var(--fg);padding-left:20px;margin-top:20px}.current strong{display:block;font-size:28px;letter-spacing:-.04em;margin-top:8px}
+section{border-bottom:1px solid var(--line);padding:100px 0}.sectionhead{display:grid;grid-template-columns:100px 1fr;gap:30px;margin-bottom:65px}.num{font-size:12px}.sectionhead h2{font-size:clamp(38px,5vw,74px);line-height:.95;letter-spacing:-.06em;margin:0}
+.thread{display:grid;grid-template-columns:repeat(6,1fr);gap:0;border-top:1px solid var(--fg);border-bottom:1px solid var(--fg)}.node{min-height:170px;padding:24px 18px;border-right:1px solid var(--line);position:relative}.node:last-child{border-right:0}.node b{font-size:15px}.node span{display:block;color:var(--muted);font-size:12px;margin-top:40px}.node:not(:last-child):after{content:"→";position:absolute;right:-10px;top:70px;background:var(--bg);padding:0 4px;z-index:1}
+.case{border-top:1px solid var(--fg);padding:34px 0}.casegrid{display:grid;grid-template-columns:90px 1fr 330px;gap:30px;align-items:start}.case h3{font-size:clamp(34px,4vw,64px);line-height:.9;letter-spacing:-.06em;margin:0 0 16px}.tag{font-size:12px;letter-spacing:.09em;text-transform:uppercase}.caselead{font-size:19px;max-width:700px}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}.metric{background:var(--bg);padding:17px}.metric strong{font-size:34px;letter-spacing:-.06em;display:block}.metric small{color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.08em}.details{margin-top:34px;border-top:1px solid var(--line);padding-top:25px;display:none}.case.open .details{display:block}.detailsgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}.details h4{font-size:11px;letter-spacing:.1em;margin:0 0 10px}.details p{margin:0;color:var(--muted);max-width:500px}.expand{margin-top:25px;border:0;background:none;padding:0;text-transform:uppercase;font-size:11px;letter-spacing:.1em;cursor:pointer;border-bottom:1px solid var(--fg)}
+.timeline{border-top:1px solid var(--fg)}.job{display:grid;grid-template-columns:170px 1fr 240px;gap:30px;padding:30px 0;border-bottom:1px solid var(--line)}.job h3{margin:0;font-size:28px;letter-spacing:-.04em}.job p{margin:5px 0;color:var(--muted)}.job .right{text-align:right}
+.resume{background:var(--panel);padding:50px;max-width:1050px}.resumehead{display:flex;justify-content:space-between;border-bottom:2px solid var(--fg);padding-bottom:18px}.resume h3{font-size:32px;margin:0}.resumegrid{display:grid;grid-template-columns:1fr 1fr;gap:35px;margin-top:30px}.resume h4{font-size:11px;letter-spacing:.1em;margin:0 0 12px}.resume p,.resume li{font-size:13px}.resume ul{padding-left:17px}
+.intent{display:grid;grid-template-columns:1fr 1fr;gap:80px}.intent h2{font-size:clamp(50px,7vw,100px);line-height:.85;letter-spacing:-.07em;margin:0}.intent p{font-size:19px;max-width:650px}.targets{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}.targets span{border:1px solid var(--fg);padding:9px 12px;font-size:11px;letter-spacing:.08em}
+footer{padding:35px 0;display:flex;justify-content:space-between;font-size:12px;color:var(--muted)}
+@media(prefers-color-scheme:dark){:root.auto{--bg:#0d0e0c;--fg:#f1f0ea;--muted:#9a9b94;--line:#383934;--panel:#171815}}body.dark{--bg:#0d0e0c;--fg:#f1f0ea;--muted:#9a9b94;--line:#383934;--panel:#171815}body.dark .node:not(:last-child):after{background:var(--bg)}
+@media(max-width:800px){.wrap{padding:0 20px}.navlinks a:not(:last-child){display:none}nav{height:62px}.hero{grid-template-columns:1fr;min-height:auto;padding:80px 0}.hero h1{font-size:19vw}.current{justify-self:start;margin-top:50px}.sectionhead{grid-template-columns:50px 1fr}.thread{grid-template-columns:1fr 1fr}.node{min-height:130px}.node:nth-child(2n){border-right:0}.node:not(:last-child):after{display:none}.casegrid,.job,.intent{grid-template-columns:1fr;gap:18px}.metrics{margin-top:10px}.detailsgrid,.resumegrid{grid-template-columns:1fr}.job .right{text-align:left}.resume{padding:25px}.intent{gap:40px}section{padding:70px 0}footer{display:block}.footerlink{margin-top:8px}}
+@media print{nav,.toggle,.expand,footer{display:none!important}body{background:white;color:black}.wrap{max-width:none;padding:0}.resume{background:white;padding:0}.resumegrid{grid-template-columns:1fr 1fr}section:not(#resume){display:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><a class="brand" href="#top">RISHI PORWAL</a><div class="navlinks"><a href="#work">WORK</a><a href="#about">ABOUT</a><a href="#resume">RÉSUMÉ</a><button class="toggle" id="theme">DARK / LIGHT</button></div></nav>
+
+<main id="top">
+<section class="hero">
+<div><div class="kicker mono">FINANCE × STRATEGY</div><h1>CAPITAL.<br>MARKETS.<br>SYSTEMS.</h1><p>I work around capital, markets and businesses — from raising capital for fractional real estate to building automated trading systems and experimenting with businesses.</p></div>
+<div class="current mono"><span>CURRENTLY</span><strong>MASTERS' UNION</strong><span>PGP · TECHNOLOGY & BUSINESS MANAGEMENT<br>2026 — PRESENT</span></div>
+</section>
+
+<section id="about">
+<div class="sectionhead"><div class="num mono">01 / 06</div><h2>THE THREAD</h2></div>
+<p style="max-width:760px;font-size:21px;margin-bottom:55px">I've followed the same curiosity through different problems. Finance taught me to look at numbers. Investing taught me to think about capital allocation. Automation made me question what really needs human intervention. Building a business forced those ideas into the real world. Strategy is where I'm learning to connect them.</p>
+<div class="thread">
+<div class="node"><b>FINANCE</b><span>Numbers</span></div><div class="node"><b>INVESTING</b><span>Capital allocation</span></div><div class="node"><b>AUTOMATION</b><span>Systems</span></div><div class="node"><b>BUSINESS</b><span>Execution</span></div><div class="node"><b>STRATEGY</b><span>Connection</span></div><div class="node"><b>MASTERS' UNION</b><span>Current chapter</span></div>
+</div></section>
+
+<section id="work">
+<div class="sectionhead"><div class="num mono">02 / 06</div><h2>SELECTED WORK</h2></div>
+
+<article class="case">
+<div class="casegrid"><div class="mono">01</div><div><div class="tag">Capital / Real Estate / Investor Relations</div><h3>FABINVEST</h3><p class="caselead">The job wasn't just to raise capital. It was to earn enough investor confidence to close it.</p><button class="expand">Open case →</button></div><div class="metrics"><div class="metric"><strong>₹7 Cr</strong><small>Personally raised</small></div><div class="metric"><strong>₹70 Cr+</strong><small>Capital actually raised</small></div><div class="metric"><strong>50+</strong><small>Investors supported</small></div><div class="metric"><strong>5+</strong><small>SPVs coordinated</small></div></div></div>
+<div class="details"><div class="detailsgrid"><div><h4>MY ROLE</h4><p>Worked directly with investors to raise capital for fractional real-estate projects and supported investment execution.</p></div><div><h4>THE WORK</h4><p>Fundraising, investor conversations, stakeholder coordination and transaction execution.</p></div><div><h4>OUTCOME</h4><p>₹7 crore personally raised, while contributing to a fundraising effort in which ₹70 crore+ of capital was actually raised.</p></div></div></div></article>
+
+<article class="case">
+<div class="casegrid"><div class="mono">02</div><div><div class="tag">Bank Nifty / Options / Automation</div><h3>AUTOMATED OPTIONS TRADING</h3><p class="caselead">What happens when you remove the trader from the trading process?</p><button class="expand">Open case →</button></div><div class="metrics"><div class="metric"><strong>45%</strong><small>Annual return</small></div><div class="metric"><strong>2 YRS</strong><small>Live period</small></div><div class="metric"><strong>10+</strong><small>Trades / month</small></div><div class="metric"><strong>80%</strong><small>Less manual intervention</small></div></div></div>
+<div class="details"><div class="detailsgrid"><div><h4>STRATEGY</h4><p>Bank Nifty options using a time-based straddle.</p></div><div><h4>WHAT I BUILT</h4><p>The strategy and execution system, designed to trade without human intervention.</p></div><div><h4>RESULT</h4><p>45% annual return over two years, based on the performance figure provided for this portfolio.</p></div></div></div></article>
+
+<article class="case">
+<div class="casegrid"><div class="mono">03</div><div><div class="tag">Masters' Union / Team Venture / Entrepreneurship</div><h3>CUSTOM PERFUMES</h3><p class="caselead">The fastest way to understand a business is sometimes to try selling something.</p><button class="expand">Open case →</button></div><div class="metrics"><div class="metric"><strong>₹5L</strong><small>Revenue</small></div><div class="metric"><strong>150</strong><small>Customers</small></div><div class="metric"><strong>3 MOS</strong><small>Project duration</small></div><div class="metric"><strong>2</strong><small>Online + offline channels</small></div></div></div>
+<div class="details"><div class="detailsgrid"><div><h4>MY ROLE</h4><p>Worked across the venture like a founder — product, sourcing, branding, marketing, sales, acquisition, operations and finance.</p></div><div><h4>GO-TO-MARKET</h4><p>Online and offline marketing, alongside cold outreach to corporates.</p></div><div><h4>OUTCOME</h4><p>A Masters' Union team venture that reached ₹5 lakh in revenue across 150 customers in three months.</p></div></div></div></article>
+
+<article class="case">
+<div class="casegrid"><div class="mono">04</div><div><div class="tag">Student Initiative / Community / Content</div><h3>COFFEE WITH FOUNDERS</h3><p class="caselead">An unconventional orientation initiative built to put students in the room with people who had built something.</p><button class="expand">Open case →</button></div><div class="metrics"><div class="metric"><strong>2 YRS</strong><small>Initiative</small></div><div class="metric"><strong>4</strong><small>Founder guests</small></div><div class="metric"><strong>2</strong><small>Episodes</small></div><div class="metric"><strong>END→END</strong><small>My involvement</small></div></div></div>
+<div class="details"><div class="detailsgrid"><div><h4>CONCEPT</h4><p>An offline student initiative created to make orientation more distinctive.</p></div><div><h4>MY ROLE</h4><p>Handled the process end-to-end, including research, outreach, coordination, hosting and production.</p></div><div><h4>DISCLOSURE</h4><p>Founder names and other identifying details are intentionally withheld.</p></div></div></div></article>
+</section>
+
+<section>
+<div class="sectionhead"><div class="num mono">03 / 06</div><h2>EXPERIENCE</h2></div>
+<div class="timeline">
+<div class="job"><div class="mono">2025 — 2026</div><div><h3>FABINVEST</h3><p>Jr. Investment Consultant</p></div><div class="right mono">CAPITAL / INVESTOR RELATIONS / EXECUTION</div></div>
+<div class="job"><div class="mono">2019 — 2020</div><div><h3>CA NIKHIL BAFNA & ASSOCIATES</h3><p>Accountant Intern</p></div><div class="right mono">ACCOUNTING / REPORTING / AUDIT</div></div>
+</div>
+</section>
+
+<section>
+<div class="sectionhead"><div class="num mono">04 / 06</div><h2>NOW</h2></div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:60px">
+<div><div class="mono">MASTERS' UNION</div><h2 style="font-size:clamp(42px,6vw,86px);line-height:.9;letter-spacing:-.07em;margin:15px 0">PGP IN TECHNOLOGY & BUSINESS MANAGEMENT</h2></div>
+<p style="font-size:20px;max-width:550px">The next step is broadening from understanding individual financial decisions to understanding businesses as systems.</p>
+</div></section>
+
+<section>
+<div class="sectionhead"><div class="num mono">05 / 06</div><h2>WHERE I'M HEADING</h2></div>
+<div class="intent"><h2>CURIOUS BY DEFAULT.<br>INVESTING BY INTENT.</h2><div><p>I'm interested in businesses that are difficult to understand at first glance — how they make money, where their advantage comes from, how capital changes their trajectory, and what makes an investment worth backing.</p><p>That's what draws me toward environments where capital allocation and business judgment intersect. I'm still exploring which seat fits me best; what I know is that I enjoy getting deep into a problem, following the numbers, and understanding the business behind them.</p><div class="targets"><span>VENTURE CAPITAL</span><span>PRIVATE EQUITY</span><span>INVESTMENT BANKING</span></div></div></div>
+</section>
+
+<section id="resume">
+<div class="sectionhead"><div class="num mono">06 / 06</div><h2>RÉSUMÉ</h2></div>
+<div class="resume">
+<div class="resumehead"><div><h3>RISHI PORWAL</h3><div class="mono">FINANCE × STRATEGY</div></div><button class="toggle" onclick="window.print()">PRINT / SAVE AS PDF</button></div>
+<div class="resumegrid">
+<div><h4>EDUCATION</h4><p><b>Masters' Union</b><br>PGP in Technology & Business Management · 2026–Present</p><p><b>BLDEA's A S Patil College of Commerce</b><br>BBA · CGPA 8.19/10 · 2021–2024</p><h4>EXPERIENCE</h4><p><b>FabInvest</b><br>Jr. Investment Consultant · Jul 2025–Jun 2026</p><ul><li>Personally raised ₹7 Cr from HNI investors.</li><li>Contributed to ₹70 Cr+ capital actually raised.</li><li>Supported investment execution for 50+ investors.</li><li>Coordinated 5+ SPVs and cross-functional workstreams.</li></ul><p><b>CA Nikhil Bafna & Associates</b><br>Accountant Intern · Jun 2019–Mar 2020</p></div>
+<div><h4>SELECTED WORK</h4><p><b>Automated Options Trading Bot</b><br>Bank Nifty options · time-based straddle · 45% annual return over two years.</p><p><b>Custom Perfumes</b><br>Masters' Union team venture · ₹5L revenue · 150 customers.</p><p><b>Coffee with Founders</b><br>Student initiative · 2 years · 4 founders · 2 episodes.</p><h4>ACHIEVEMENTS</h4><ul><li>GMAT Focus Edition: 635</li><li>CAT 2024: 97th percentile</li><li>2nd place — National Best Manager Competition</li><li>25% Pankaj Bansal Scholarship for Young Leaders</li><li>2nd place — national-level quiz competition</li></ul><h4>CERTIFICATIONS</h4><p>CFA Program Level I · CFA Institute<br>Bloomberg Market Concepts · Bloomberg</p></div>
+</div>
+</div></section>
+</main>
+<footer><span>RISHI PORWAL · 2026</span><span class="footerlink"><a href="https://www.linkedin.com/in/rishi-porwal" target="_blank">LINKEDIN</a> · <a href="https://rishi-porwal.web.app" target="_blank">CURRENT SITE</a> · <a href="mailto:rishi.porwal2028@mastersunion.org">EMAIL</a></span></footer>
+</div>
+<script>
+const body=document.body, btn=document.getElementById('theme');
+btn.onclick=()=>body.classList.toggle('dark');
+document.querySelectorAll('.expand').forEach(b=>b.onclick=()=>{const c=b.closest('.case');c.classList.toggle('open');b.textContent=c.classList.contains('open')?'Close case ↑':'Open case →'});
+</script>
+</body></html>
